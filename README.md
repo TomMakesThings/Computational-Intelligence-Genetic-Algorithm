@@ -1,7 +1,7 @@
 # **About**
 
 ### **Problem Definition**
-<a href="https://github.com/TomMakesThings/Computational-Intelligence/blob/main/Genetic%20Algorithm/Genetic_Algorithm.ipynb">Genetic_Algorithm.ipynn</a> solves the following multi-objective optimisation problem using the elitist non-dominated sorting genetic algorithm (NSGA-II)
+The Jupyter notebook <a href="https://github.com/TomMakesThings/Computational-Intelligence/blob/main/Genetic%20Algorithm/Genetic_Algorithm.ipynb">Genetic_Algorithm.ipynn</a> solves the following multi-objective optimisation problem using the elitist non-dominated sorting genetic algorithm (NSGA-II)
 
 <img src="https://render.githubusercontent.com/render/math?math=min\{f_{1}, f_{2}\}">
 
