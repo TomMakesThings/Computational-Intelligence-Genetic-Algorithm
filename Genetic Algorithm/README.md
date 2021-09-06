@@ -1,7 +1,7 @@
 # **About**
 
 ### **Problem Definition**
-This code solves the following multi-objective optimisation problem using the elitist non-dominated sorting genetic algorithm (NSGA-II)
+<a href="https://github.com/TomMakesThings/Computational-Intelligence/blob/main/Genetic%20Algorithm/Genetic_Algorithm.ipynb">Genetic_Algorithm.ipynn</a> solves the following multi-objective optimisation problem using the elitist non-dominated sorting genetic algorithm (NSGA-II)
 
 <img src="https://render.githubusercontent.com/render/math?math=min\{f_{1}, f_{2}\}">
 
@@ -47,7 +47,7 @@ A population of 25 individuals is created and each is assigned a random 10-bit s
 
 Then using the decoded values, <img src="https://render.githubusercontent.com/render/math?math=$f_{1}$"> and <img src="https://render.githubusercontent.com/render/math?math=$f_{2}$"> are calculated.
 
-| Individual | <img src="https://render.githubusercontent.com/render/math?math=$x_{1}$">    | <img src="https://render.githubusercontent.com/render/math?math=$x_{1}$">    | $x_{1}$    | $f_{1}$  | $f_{2}$  |
+| Individual | <img src="https://render.githubusercontent.com/render/math?math=$x_{1}$"> | <img src="https://render.githubusercontent.com/render/math?math=$x_{2}$"> | <img src="https://render.githubusercontent.com/render/math?math=$x_{3}$"> | <img src="https://render.githubusercontent.com/render/math?math=$f_{1}$">  | <img src="https://render.githubusercontent.com/render/math?math=$f_{2}$"> |
 | ---------- | ---------- | ---------- | ---------- | -------- | -------- |
 | 1          | 1100000101 | 1110111000 | 1101000010 | 0.371571 | 0.433807 |
 | 2          | 1110111000 | 1101001011 | 1110101100 | 1.05772  | 0.319697 |
@@ -57,9 +57,9 @@ Then using the decoded values, <img src="https://render.githubusercontent.com/re
 
 <br>
 
-Individuals are sorted into fronts using the efficient non-dominated sorting algorithm. First the population is copied, then sorted based on $f_{1}$. If the $f_{1}$ are equal, then sort on $f_{2}$. The first solution is assigned to front 1. All further solutions are compared the current front, starting with front 1. If they are dominated by at least 1 solution in the current front, a new front is created with this individual. Otherwise check the next front. If all fronts are checked, a new front is created containing this individual. 
+Individuals are sorted into fronts using the efficient non-dominated sorting algorithm. First the population is copied, then sorted based on <img src="https://render.githubusercontent.com/render/math?math=$f_{1}$">. If the <img src="https://render.githubusercontent.com/render/math?math=$f_{1}$"> are equal, then sort on <img src="https://render.githubusercontent.com/render/math?math=$f_{2}$">. The first solution is assigned to front 1. All further solutions are compared the current front, starting with front 1. If they are dominated by at least 1 solution in the current front, a new front is created with this individual. Otherwise check the next front. If all fronts are checked, a new front is created containing this individual. 
 
-| Individual | $x_{1}$    | $x_{1}$    | $x_{1}$    | $f_{1}$  | $f_{2}$  | Front |
+| Individual | <img src="https://render.githubusercontent.com/render/math?math=$x_{1}$"> | <img src="https://render.githubusercontent.com/render/math?math=$x_{2}$"> | <img src="https://render.githubusercontent.com/render/math?math=$x_{3}$"> | <img src="https://render.githubusercontent.com/render/math?math=$f_{1}$">  | <img src="https://render.githubusercontent.com/render/math?math=$f_{2}$"> | Front |
 | ---------- | ---------- | ---------- | ---------- | -------- | -------- | - |
 | 1          | 1100000101 | 1110111000 | 1101000010 | 0.371571 | 0.433807 | 1 |
 | 2          | 1110111000 | 1101001011 | 1110101100 | 1.05772  | 0.319697 | 1 |
@@ -71,13 +71,13 @@ Individuals are sorted into fronts using the efficient non-dominated sorting alg
 
 Once the individuals are separated into fronts, the crowding distance for individuals in each front is calculated. Solutions at the end of each front are assigned infinite distance, while those in between are assigned the average side length of its two neighbouring solutions.
 
-| Individual | $x_{1}$    | $x_{1}$    | $x_{1}$    | $f_{1}$  | $f_{2}$  | Front | Crowding Distance |
+| Individual | <img src="https://render.githubusercontent.com/render/math?math=$x_{1}$"> | <img src="https://render.githubusercontent.com/render/math?math=$x_{2}$"> | <img src="https://render.githubusercontent.com/render/math?math=$x_{3}$"> | <img src="https://render.githubusercontent.com/render/math?math=$f_{1}$">  | <img src="https://render.githubusercontent.com/render/math?math=$f_{2}$"> | Front | Crowding Distance |
 | ---------- | ---------- | ---------- | ---------- | -------- | -------- | - | -|
-| 1          | 1100000101 | 1110111000 | 1101000010 | 0.371571 | 0.433807 | 1 | $\infty$ |
+| 1          | 1100000101 | 1110111000 | 1101000010 | 0.371571 | 0.433807 | 1 | <img src="https://render.githubusercontent.com/render/math?math=$\infty$"> |
 | 2          | 1110111000 | 1101001011 | 1110101100 | 1.05772  | 0.319697 | 1 | 1| 
 | ...        | ...        | ...        | ...        | ...      | ...      | ... | ... |
-| 24         | 1001111110 | 0110110001 | 0010111100 | 2.78652  | 4.50792  | 7 | $\infty$ |
-| 25         | 0010011011 | 0101100100 | 0000001110 | 5.49692  | 9.91497  | 8 | $\infty$ |
+| 24         | 1001111110 | 0110110001 | 0010111100 | 2.78652  | 4.50792  | 7 | <img src="https://render.githubusercontent.com/render/math?math=$\infty$"> |
+| 25         | 0010011011 | 0101100100 | 0000001110 | 5.49692  | 9.91497  | 8 | <img src="https://render.githubusercontent.com/render/math?math=$\infty$"> |
 
 <br>
 
@@ -89,7 +89,9 @@ Pairs of parents are selected through binary tournament selection until 25 offsp
 
 **Crossover and Mutation**
 
-Uniform crossover is applied to parent pairs at a chance of 0.9. If no crossover occurs, parents’ genes are directly transferred to resulting offspring. Mutation is applied to the created offspring at a chance inversely proportionate to the chromosome size, i.e. $p = \frac{1}{L}$.
+Uniform crossover is applied to parent pairs at a chance of 0.9. If no crossover occurs, parents’ genes are directly transferred to resulting offspring. Mutation is applied to the created offspring at a chance inversely proportionate to the chromosome size, i.e. 
+
+<img src="https://render.githubusercontent.com/render/math?math=$p = \frac{1}{L}$">.
 
 <br>
 
@@ -97,8 +99,12 @@ Uniform crossover is applied to parent pairs at a chance of 0.9. If no crossover
 
 Parents and offspring populations are combined and sorted into fronts using non-dominated sorting. Individuals are assigned a crowding distance and individuals within each front are sorted by crowding distance in descending order. Fronts are combined into a list in ascending order, and the top 25 individuals are selected for the next population.
 
+<img src="https://github.com/TomMakesThings/Computational-Intelligence/blob/main/Genetic%20Algorithm/Offspring.png">
+
 <br>
 
 **Evolution**
 
 The algorithm is run for 30 generations causing the individuals to converge towards the Pareto frontier.  This is the shape formed by the optimal solutions in the objective space. In this case it is convex as this is a minimisation problem. To evaluate performance across generations, hypervolume is calculated using the worst objective values as a reference point. 
+
+<img src="https://github.com/TomMakesThings/Computational-Intelligence/blob/main/Genetic%20Algorithm/Evolution.png">
