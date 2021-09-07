@@ -99,7 +99,7 @@ Uniform crossover is applied to parent pairs at a chance of 0.9. If no crossover
 
 Parents and offspring populations are combined and sorted into fronts using non-dominated sorting. Individuals are assigned a crowding distance and individuals within each front are sorted by crowding distance in descending order. Fronts are combined into a list in ascending order, and the top 25 individuals are selected for the next population.
 
-<img src="https://github.com/TomMakesThings/Computational-Intelligence-Genetic-Algorithm/blob/main/Offspring.png">
+<img src="https://github.com/TomMakesThings/Computational-Intelligence-Genetic-Algorithm/blob/main/Images/Offspring.png">
 
 <br>
 
@@ -107,4 +107,4 @@ Parents and offspring populations are combined and sorted into fronts using non-
 
 The algorithm is run for 30 generations causing the individuals to converge towards the Pareto frontier.  This is the shape formed by the optimal solutions in the objective space. In this case it is convex as this is a minimisation problem. To evaluate performance across generations, hypervolume is calculated using the worst objective values as a reference point. 
 
-<img src="https://github.com/TomMakesThings/Computational-Intelligence-Genetic-Algorithm/blob/main/Evolution.png">
+<img src="https://github.com/TomMakesThings/Computational-Intelligence-Genetic-Algorithm/blob/main/Images/Evolution.png">
