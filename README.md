@@ -1,7 +1,7 @@
 # **About**
 
 ### **Problem Definition**
-The Jupyter notebook <a href="https://github.com/TomMakesThings/Computational-Intelligence/blob/main/Genetic%20Algorithm/Genetic_Algorithm.ipynb">Genetic_Algorithm.ipynn</a> solves the following multi-objective optimisation problem using the elitist non-dominated sorting genetic algorithm (NSGA-II)
+The aim of this project is to solve the following multi-objective optimisation problem using the elitist non-dominated sorting genetic algorithm (NSGA-II)
 
 <img src="https://render.githubusercontent.com/render/math?math=min\{f_{1}, f_{2}\}">
 
@@ -108,3 +108,7 @@ Parents and offspring populations are combined and sorted into fronts using non-
 The algorithm is run for 30 generations causing the individuals to converge towards the Pareto frontier.  This is the shape formed by the optimal solutions in the objective space. In this case it is convex as this is a minimisation problem. To evaluate performance across generations, hypervolume is calculated using the worst objective values as a reference point. 
 
 <img src="https://github.com/TomMakesThings/Computational-Intelligence-Genetic-Algorithm/blob/main/Images/Evolution.png">
+
+# Instructions to Run the Code
+1. Download the [Jupyter notebook](https://github.com/TomMakesThings/Computational-Intelligence-Genetic-Algorithm/blob/main/Genetic_Algorithm.ipynb)
+2. Import the notebook into [Colab](https://colab.research.google.com/)
