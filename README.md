@@ -111,5 +111,5 @@ The algorithm is run for 30 generations causing the individuals to converge towa
 
 # Instructions to Run the Code
 1. [Click here](https://github.com/TomMakesThings/Computational-Intelligence-Genetic-Algorithm/archive/refs/heads/main.zip) to download the repository contents
-2. Extract the [Jupyter notebook](https://github.com/TomMakesThings/Computational-Intelligence-Genetic-Algorithm/blob/main/Genetic_Algorithm.ipynb)
+2. Extract the [Jupyter notebook](https://github.com/TomMakesThings/Computational-Intelligence-Genetic-Algorithm/blob/main/Genetic_Algorithm.ipynb) from the ZIP
 3. Import the notebook into [Colab](https://colab.research.google.com/)
