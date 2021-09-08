@@ -5,8 +5,8 @@ The aim of this project is to solve the following multi-objective optimisation p
 
 <img src="https://render.githubusercontent.com/render/math?math=min\{f_{1}, f_{2}\}">
 
-<img width=150 src="https://render.githubusercontent.com/render/math?math=f_{1} = \frac{(\frac{x_{1}}{2})^2 + (\frac{x_{2}}{4})^2 + (x_{3})^2}{3}">
-<img width=220 src="https://render.githubusercontent.com/render/math?math=f_{2} = \frac{(\frac{x_{1}}{2} - 1)^2 + (\frac{x_{2}}{4} - 1)^2 + (x_{3} - 1)^2}{3}">
+<img width=150 src="https://render.githubusercontent.com/render/math?math=f_{1} = \frac{(\frac{x_{1}}{2})^2 \text{∔} (\frac{x_{2}}{4})^2 \text{∔} (x_{3})^2}{3}">
+<img width=220 src="https://render.githubusercontent.com/render/math?math=f_{2} = \frac{(\frac{x_{1}}{2} - 1)^2 \text{∔} (\frac{x_{2}}{4} - 1)^2 \text{∔} (x_{3} - 1)^2}{3}">
 
 For <img src="https://render.githubusercontent.com/render/math?math=-4.0 \le x_{1}, x_{2}, x_{3} \le 4.0">
 
